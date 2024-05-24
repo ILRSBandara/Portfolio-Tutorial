@@ -104,13 +104,13 @@ span{
     line-height: 1;
 }
 .home-image{
-    border-radius: 10%;
+    border-radius: 80%;
 }
 .home-image img{
     position: relative;
-    top: 3rem;
-    width: 32vw;
-    border-radius: 40%;
+    top: 6rem;
+    width: 30vw;
+    border-radius: 100%;
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
     transition: 0.4s ease-in-out;
@@ -170,7 +170,7 @@ box-shadow: 0 0 25px var(--main-color),
     gap: 1.5rem;
 }
 .btn-group a:nth-last-of-type(2){
-    background-color: black;
+    background-color: rgb(248, 246, 249);
     color: var(--main-color);
     border: 2px solid var(--main-color);
     box-shadow: 0 0 25px transparent;
@@ -178,7 +178,7 @@ box-shadow: 0 0 25px var(--main-color),
 .btn-group a:nth-last-of-type(2):hover{
     box-shadow: 0 0 25px var(--main-color);
     background-color: var(--main-color);
-    color: blanchedalmond;
+    color: rgb(196, 192, 186);
 }
 .text-animation{
     font-size: 34px;
@@ -194,7 +194,7 @@ box-shadow: 0 0 25px var(--main-color),
     animation: words 20s infinite;
 }
 .text-animation span::after{
-    content: "Web Developer";
+    content: "";
     background-color: var(--bg-color);
     position: absolute;
     width: calc(100% + 8px);
@@ -213,12 +213,98 @@ box-shadow: 0 0 25px var(--main-color),
     20%{
         content: "UI/UX Designer";
     }
-    21%,
-    40%{
+    30%,
+    50%{
         content: "Frontend Designer";
     }
-    41%,
-    60%{
-        content: "Web Designer-";
+    64%,
+    80%{
+        content: "Web Designer";
     }
+    61%,
+    80%{
+        content: "Web Developer";
+    }
+    81%,
+    100%{
+        content: "Software Tester";
+    }
+}
+@keyframes typing{
+    10%,
+    25%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95%{
+        width: 0;
+    }
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85%{
+        width: calc(100% + 8px);
+    }
+}
+.heading{
+    font-size: 8rem;
+    text-align: center;
+    margin: 5rem 0;
+}
+.education{
+    padding: 100px 15px;
+    background: var(--bg-colore);
+}
+.education h2{
+    margin-bottom: 5rem;
+}
+.timeline-items{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.timeline-items::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: var(--main-color);
+    left: calc(50% - 1px);
+}
+.timeline-item{
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+.timeline-item:last-child{
+    margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+.timeline-item:nth-last-child(even){
+    padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+    height: 21px;
+    width: 21px;
+    background-color: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color);
+    position: absolute;
+    left: calc(50% - 8px);
+    border-radius: 50%;
+    top: 10px;            
 }
