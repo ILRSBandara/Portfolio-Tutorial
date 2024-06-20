@@ -350,7 +350,7 @@ line-height: 22px;
     gap: 2.5rem;
 }
 .service-box{
-    background-color: var(--main-color);
+    background-color: papayawhip;
     height: 300px;
     border-radius: 3rem;
     border: 5px solid transparent;
@@ -358,7 +358,29 @@ line-height: 22px;
     transition: 0.4s ease-in-out;
 }
 .service-box-hover{
-    background: rgb(144, 245, 137);
+    background: black;
     color: #090909;
     border: 5px solid var(--main-color);
+    transform: scale(1.03);
 }
+.service-box .service-info{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-height: 200px;
+    justify-content: left;
+    align-items: baseline;
+    padding: 5rem 5rem;
+}
+.service-info h4{
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 2;
+}
+.service-info p{
+    font-size: 1.6rem;
+    font-weight: 600;
+    max-height: 100px;
+    line-height: 1.7;
+    margin: auto;
+} 
